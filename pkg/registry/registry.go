@@ -66,6 +66,12 @@ const (
 	EndOfFlowReason     = uint8(0x03)
 )
 
+// enum for l7FlowType field in Antrea registry
+const (
+	L7flowNotPresent = uint8(0)
+	L7flowTypeHttp   = uint8(1)
+)
+
 var (
 	// globalRegistryByID shows mapping EnterpriseID -> Info element ID -> Info element
 	globalRegistryByID map[uint32]map[uint16]*entities.InfoElement
